@@ -12,5 +12,4 @@ Week 2025-09-20 — Sysmon baseline & basic hunts
 - Detection: example Sigma rule in `/sigma-rules/detect_powershell_encodedcommand.yml`
 
 Contact / Portfolio
-- Notion: 
-- LinkedIn:
+- LinkedIn: https://www.linkedin.com/in/a-craash/
