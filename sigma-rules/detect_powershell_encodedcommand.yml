@@ -1,0 +1,19 @@
+title: Detect PowerShell EncodedCommand Usage
+id: 123e4567-e89b-12d3-a456-426614174000
+status: experimental
+description: Detects usage of PowerShell with -EncodedCommand in process commandline.
+author: TU_NOMBRE
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains: '-EncodedCommand'
+  condition: selection
+fields:
+  - CommandLine
+  - ParentImage
+falsepositives:
+  - Admin automation
+level: medium
